@@ -1,0 +1,92 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr; /*1 linha com o tamanho estabelecido e o restante em 1 fração só*/
+    grid-template-areas: 
+    'header header'
+    'left right'
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{  /*parte esquerda da home*/
+    grid-area:left;
+    background: url(/images/homeBg-img.svg) no-repeat top/contain; /*img não se repete, fica no topo e se encaixa no tamanho da div*/;
+}
+
+main{ /*parte direita da home*/
+    grid-area:right;
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    width: min(36.3rem, 100%); /*para não fugir do layout, respeitando o minimo*/
+}
+
+main h2{
+    font-family:'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+input{
+    border: .2rem solid var(--grey-yellow);
+    padding: 0 1.6rem;
+    outline: none;
+}
+
+input,button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+/*separator Line*/
+
+.separator{
+    display: flex; /*alinha lado a lado*/
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.separator div:nth-child(2){
+    color: var(--grey-yellow);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0 1.35rem; /*margem ao redor do 'ou'*/
+    line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){   /*indica quais filhos da div quer usar*/
+    background: var(--grey-yellow);
+    width: 100%;
+    height: 1px;
+}
+
+/* ----- balls ----*/
+
+.ball{
+
+    background: var(--yellow);
+    position: fixed;
+    clip-path: circle(); 
+    opacity: .1;
+}
+
+.ball.top{
+    width:63.3rem;
+    height: 63.3rem;
+    top:-45rem;
+    right:-45rem;
+}
+
+.ball.bottom{
+    width:21.2rem;
+    height: 21.2rem;
+    bottom: -15rem;
+    right: 5.6rem;
+}

@@ -1,0 +1,24 @@
+<!-- página para entrar com senha ou criar sala -->
+<section>
+    <h2>Entre como participante</h2>
+    <form action="/enter-room" method="POST"> <!--action para mandar o form para algum lugar (JS)-->
+        <label class="sr-only" for="room-id">Código da sala</label> <!--Sempre criar para o google e leitores automáticos de PCD identificarem o que é o input-->
+        <input name="roomId" type="number" id="room-id" placeholder="Código da sala"> <!--O id associa o input ao label-->
+        <button>
+            <img src="images/enterRoom.svg" alt="Entrar na sala">
+            Entrar na sala</button>
+    </form>
+</section>
+
+<div class="separator">
+    <div></div>
+    <div>ou</div>
+    <div></div>
+</div>
+
+<section>
+    <h2>Crie sua própria sala de forma fácil</h2>
+    <a href="/create-pass" class="button outlined">
+        <img src="images/users.svg" alt="Criar Sala"/> Criar Sala
+    </a>
+</section>

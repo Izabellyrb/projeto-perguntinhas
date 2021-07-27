@@ -1,0 +1,13 @@
+<!-- Pagina de entrar na sala -->
+<section> 
+    <h2>Crie sua própria sala</h2>
+    <form action="/create-room" method="POST"> <!--action para mandar o form para o create room-->
+        <label class="sr-only" for="room-pass">Insira uma senha</label> <!--Sempre criar para o google e leitores (acessibilidade) identificarem o que é o input-->
+        <input type="password" name= "password" id="room-pass" placeholder="Insira uma senha"> <!--O id associa o input ao label-->
+        <button>
+            <img src="images/users-white.svg" alt="Entrar na sala">
+            Criar sala 
+        </button>
+    </form>
+</section>
+  
