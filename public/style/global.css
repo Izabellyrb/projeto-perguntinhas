@@ -22,7 +22,7 @@ html{
     --grey-medium: #f1f1ea;
 
     /*1rem = 16px (100%)*/
-    font-size: 62.5%;  /* ou 10px, deixar este padrão para facilita o calculo de resposividade dos outros itens*/
+    font-size: 62.5%;  /* ou 10px, deixar este padrão para facilitar o calculo de resposividade dos outros itens*/
 }
 
 body{
